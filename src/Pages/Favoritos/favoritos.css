@@ -1,0 +1,125 @@
+.meus-filmes {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meus-filmes h1 {
+    margin: 50px 0;
+    font-size: 36px;
+    color: var(--preto);
+    text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.3),
+        0 0 7px rgba(0, 0, 0, 0.2),
+        0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px -12px rgba(242, 109, 79, 0.402);
+}
+
+.spam-empty {
+    gap: 50px;
+}
+
+.meus-filmes span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.meus-filmes ul {
+    width: 700px;
+    margin-top: 30px;
+}
+
+.meus-filmes ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: ease 0.5s;
+}
+
+.meus-filmes ul button {
+    height: 30px;
+    width: 80px;
+    border-radius: 4px;
+    background-color: var(--azul-c);
+    transition: ease 0.5s;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.meus-filmes ul button:hover {
+    color: var(--cinza2);
+    background-color: var(--laranja);
+    text-shadow:
+        0 0 5px rgba(242, 109, 79, 0.3),
+        0 0 10px rgba(242, 109, 79, 0.450),
+        0 0 15px rgba(242, 109, 79, 0.696);
+    box-shadow: 0 0 30px 2px rgba(242, 109, 79, 0.402); 
+}
+
+.meus-filmes li:hover {
+    text-shadow:
+        0 0 5px rgba(242, 109, 79, 0.250),
+        0 0 10px rgba(242, 109, 79, 0.350),
+        0 0 15px rgba(242, 109, 79, 0.450);
+}
+
+.meus-filmes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meus-filmes div a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--laranja);
+    margin-right: 20px;
+    transition: ease 0.5s;
+}
+
+.meus-filmes div a:hover {
+    color: var(--azul);
+}
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 720px) { 
+
+    .meus-filmes ul {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .meus-filmes li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;      
+    }
+
+    .meus-filmes li span {
+        align-items: start;
+        flex: 1;
+    }
+
+    .item-li {
+        flex-wrap: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .meus-filmes ul button {
+        flex-shrink: 0;
+        gap: 10px;
+    }
+
+}
