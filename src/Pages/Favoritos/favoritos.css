@@ -125,4 +125,8 @@
         gap: 10px;
     }
 
+    .span-empty {
+        padding: 20px;
+    }
+
 }
