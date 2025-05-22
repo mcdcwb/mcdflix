@@ -17,8 +17,12 @@
     box-shadow: 0 10px 20px -12px rgba(242, 109, 79, 0.402);
 }
 
-.spam-empty {
+.span-empty {
     gap: 50px;
+}
+
+.span-title {
+    margin-right: 10px;
 }
 
 .meus-filmes span {
@@ -26,7 +30,6 @@
     flex-direction: column;
     align-items: center;
     font-size: 24px;
-    margin-right: 10px;
 }
 
 .meus-filmes ul {
